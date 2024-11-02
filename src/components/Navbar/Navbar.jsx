@@ -13,7 +13,7 @@ export default function Navbar() {
     setDark(!dark);
   };
   return (
-    <nav className="flex text-white justify-between align-middle p-5 px-20 bg-neutral-800 bg-opacity-20">
+    <nav className="fixed w-full flex text-white justify-between align-middle p-5 px-20 bg-neutral-800 bg-opacity-20">
       <div>
         <h3 className="font-semibold text-3xl text-white">Nehal</h3>
       </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
 
       <div>
         <button
-          className="mr-5 relative overflow-hidden language-switch rounded-md mt-1 border border-b-gray-100 p-1 "
+          className="mr-5 relative overflow-hidden language-switch rounded-md mt-1 border border-b-gray-100 p-1 text-zinc-400"
           onClick={toggleButton}
         >
           <span className={`fi ${en ? "fi-eg" : "fi-us"} mr-1`}></span>
