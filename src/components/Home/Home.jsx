@@ -25,10 +25,10 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="w-full h-lvh pt-7 flex flex-col justify-center text-center text-white">
+    <section id="home" className="w-full h-lvh pt-7 flex flex-col justify-center text-center text-white">
       <main className="w-2/4 m-auto">
         <h2 className="text-5xl font-semibold my-5"> Hi, I’m Nehal Khaled</h2>
-        <span className="text-6xl">
+        <span className="text-6xl new">
           F<h1 className="inline-flex" ref={el}></h1>
         </span>
 
@@ -36,9 +36,7 @@ export default function Home() {
           Welcome to my corner of the web!
         </span>
         <p className="text-xl mt-3">
-          I’m a front-end developer passionate about creating visually stunning
-          and user-friendly digital experiences. Let's make the web a more
-          beautiful place together!
+        I’m a front-end developer passionate about crafting visually appealing and user-friendly digital experiences. Let’s team up to create a dynamic web experience!
         </p>
 <a target="_blank" href="https://drive.google.com/file/d/1ejsmGIh5bjj7uEadSh6_FPDDURJ9i3f9/view?usp=drive_link">
 <button className=" shadow-button rounded-xl p-3 mt-4">
@@ -57,10 +55,10 @@ export default function Home() {
             </div>
           </a>
 
-          <a target="_blank" href="mailto:nehalkhaled62@gmail.com">
+          {/* <a target="_blank" href="mailto:nehalkhaled62@gmail.com">
             <div className="w-12 h-12 shadow-button border rounded-full flex items-center justify-center ">
             <i class="fa-brands fa-github fa-xl"></i></div>
-          </a>
+          </a> */}
         </div>
       </main>
     </section>

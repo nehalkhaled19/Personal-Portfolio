@@ -13,40 +13,42 @@ export default function Navbar() {
     setDark(!dark);
   };
   return (
-    <nav className="fixed w-full flex text-white justify-between align-middle p-5 px-20 bg-neutral-800 bg-opacity-20">
-      <div>
-        <h3 className="font-semibold text-3xl text-white">Nehal</h3>
+    <nav className="fixed w-full  justify-between align-middle py-5  bg-neutral-800 bg-opacity-20">
+      
+      <main className=" w-5/6 flex justify-between align-middle m-auto "><div>
+        <h3 className="font-semibold text-3xl">Nehal</h3>
       </div>
 
       <ul className="flex align-middle mt-2">
         <li className="mx-2 p-0 my-0">
-          <a href="">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li className="mx-2 ">
-          <a href="">About</a>
+          <a href="#about">About</a>
         </li>
         <li className="mx-2 ">
-          <a href="">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li className="mx-2 ">
-          <a href="">Services</a>
+          <a href="#services">Services</a>
         </li>
         <li className="mx-2 ">
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 
       <div>
         <button
-          className="mr-5 relative overflow-hidden language-switch rounded-md mt-1 border border-b-gray-100 p-1 text-zinc-400"
+          className="mr-5 p-2 border border-bg-gray-100 overflow-hidden shadow-button rounded-md mt-1  "
           onClick={toggleButton}
         >
           <span className={`fi ${en ? "fi-eg" : "fi-us"} mr-1`}></span>
           <i>{en ? "ar" : "en"}</i>
         </button>
 
-        <i onClick={toggleButtonDark} class={`fa-solid fa-${ dark? 'moon' :'sun'} fa-xl text-white`}></i>
+        <i onClick={toggleButtonDark} className={`fa-solid fa-${ dark? 'moon' :'sun'} fa-xl`}></i>
       </div>
+      </main>
     </nav>
   );
 }

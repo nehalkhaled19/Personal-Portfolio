@@ -2,28 +2,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-    --main-bg:  rgb(9, 9, 11);
+
+:root {
+
 }
-body{
-    background-color: var(--main-bg);
-    height: 100vh;
-    width: 100vh;
+
+body {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
-}
-.do {
-    background-image: radial-gradient(80% 90% at 50% -20%, rgba(94, 176, 239, .5), hsla(0, 0%, 100%, 0));
-    width: 100vw;
-    height: 100vh;
-    color: wheat;
-}
-.shadow-button{
-    transition: all 0.3s;
-    border: 1px solid #1f2937;
-}
-.shadow-button:hover{
-    box-shadow:0px 1px 20px rgba(141, 201, 248, 0.3);
-    border: 1px solid rgba(134, 193, 239, 0.5);
     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bg{
+    background: linear-gradient(90deg, rgb(9, 9, 11), #023262);
+  
+}
+
+.shadow-button {
+    transition: all 0.3s;
+    border: 1px solid #6885ae;
+}
+
+.shadow-button:hover {
+    box-shadow: 0px 1px 20px rgba(141, 201, 248, 0.3);
+    border: 1px solid rgba(134, 193, 239, 0.5);
+}
+
+.class-after {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.class-after::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 40%;
+    background-color: #1173d5;
+    height: 5px;
+    
+    /* Tailwind color classes can be applied here */
+}
+.main-text{
+    @apply font-medium text-lg mb-4 leading-7 ;
+}
+.main-heder{
+    @apply text-5xl font-semibold my-5 class-after inline-block ;
+}
+.container{
+    @apply  py-10 w-5/6 m-auto ;
+}
+.border-name{
+    border-bottom: solid rgba(232, 231, 231, 0.522) 1px;
 }
