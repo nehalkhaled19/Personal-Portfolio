@@ -38,10 +38,10 @@ const ParticlesComponent = () => {
         color: { value: "#ffffff" },
         links: {
           color: "#ffffff",
-          distance: 80,
+          distance: 40,
           enable: true, // تأكد من تفعيل الشبكة
           opacity: 1,
-          width: 0.2,
+          width: 0.3,
         },
         move: {
           direction: "top", // جعل الحركة للأعلى
@@ -51,7 +51,7 @@ const ParticlesComponent = () => {
           speed: 2,
           straight: true,
         },
-        number: { density: { enable: true }, value: 130 },
+        number: { density: { enable: true }, value: 100 },
         opacity: { value: 0.4 },
         shape: { type: "circle" },
         size: { value: { min: 1, max: 3 } },

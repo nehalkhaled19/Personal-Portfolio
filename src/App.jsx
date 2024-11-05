@@ -3,16 +3,19 @@ import Navbar from "./components/Navbar/Navbar";
 import ParticlesComponent from "./components/Particles/Particles";
 import About from "./components/About/About";
 import { useEffect } from "react";
-import Skills from "./components/Skills/Skills"
+import Skills from "./components/Skills/Skills";
+import Services from "./components/Services/Services";
 
 export default function App() {
   return (
     <div className="bg">
-            <Navbar/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <ParticlesComponent/>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Services />
+      
+      <ParticlesComponent />
     </div>
-  )
+  );
 }

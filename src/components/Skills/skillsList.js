@@ -2,17 +2,17 @@
 import imgHtml from '../../assets/html.svg';
 import imgCss from '../../assets/css3.svg';
 import imgJs from '../../assets/js.svg';
-import imgJquery from '../../assets/jquery.svg';
-// import imgSass from '../../assets/sass.svg';
+import imgJquery from '../../assets/jquery1.svg';
+import imgSass from '../../assets/sass1.svg';
 import imgBootstrap from '../../assets/bootstrap.svg';
 import imgTailwind from '../../assets/tailwind.svg';
 import imgTs from '../../assets/ts.svg';
-import imgFirebase from '../../assets/firebase.png';
+import imgFirebase from '../../assets/firebase.svg';
 import imgReact from '../../assets/react.svg';
-import imgRedux from '../../assets/redux.png';
-import imgNext from '../../assets/next.png'; // تأكد من وجود هذا الملف
+import imgRedux from '../../assets/redux.svg';
+import imgNext from '../../assets/next.svg'; // تأكد من وجود هذا الملف
 import imgGithub from '../../assets/github.svg';
-import imgGit from '../../assets/git.png';
+import imgGit from '../../assets/git.svg';
 
 const skillsList = [
     { name: "HTML5", src: imgHtml },
