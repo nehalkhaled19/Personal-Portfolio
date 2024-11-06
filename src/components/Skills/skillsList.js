@@ -1,18 +1,18 @@
 // skillsList.js
-import imgHtml from '../../assets/html.svg';
-import imgCss from '../../assets/css3.svg';
-import imgJs from '../../assets/js.svg';
-import imgJquery from '../../assets/jquery1.svg';
-import imgSass from '../../assets/sass1.svg';
-import imgBootstrap from '../../assets/bootstrap.svg';
-import imgTailwind from '../../assets/tailwind.svg';
-import imgTs from '../../assets/ts.svg';
-import imgFirebase from '../../assets/firebase.svg';
-import imgReact from '../../assets/react.svg';
-import imgRedux from '../../assets/redux.svg';
-import imgNext from '../../assets/next.svg'; // تأكد من وجود هذا الملف
-import imgGithub from '../../assets/github.svg';
-import imgGit from '../../assets/git.svg';
+import imgHtml from '../../assets/Skills/html.svg';
+import imgCss from '../../assets/Skills/css3.svg';
+import imgJs from '../../assets/Skills/js.svg';
+import imgJquery from '../../assets/Skills/jquery1.svg';
+import imgSass from '../../assets/Skills/sass1.svg';
+import imgBootstrap from '../../assets/Skills/bootstrap.svg';
+import imgTailwind from '../../assets/Skills/tailwind.svg';
+import imgTs from '../../assets/Skills/ts.svg';
+import imgFirebase from '../../assets/Skills/firebase.svg';
+import imgReact from '../../assets/Skills/react.svg';
+import imgRedux from '../../assets/Skills/redux.svg';
+import imgNext from '../../assets/Skills/next.svg'; // تأكد من وجود هذا الملف
+import imgGithub from '../../assets/Skills/github.svg';
+import imgGit from '../../assets/Skills/git.svg';
 
 const skillsList = [
     { name: "HTML5", src: imgHtml },
