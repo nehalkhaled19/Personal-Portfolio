@@ -11,11 +11,7 @@ body {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
     color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 1;
     background: linear-gradient(90deg, rgb(9, 9, 11), #023262);
-
 }
 
 .slider-bg{
@@ -27,16 +23,18 @@ body {
 .slider:hover .slider-bg{
     transform: rotateY(360deg) scale(0.8,0.8)
 }
-.shadow-button {
+.shadow-button, .project-navlink {
     transition: all 0.3s;
-    border: 1px solid #6885ae;
+    border:1px solid #6885ae;
 }
 
-.shadow-button:hover {
+.shadow-button:hover, .active-project-navlink {
     box-shadow: 0px 1px 20px rgba(141, 201, 248, 0.3);
     border: 1px solid rgba(134, 193, 239, 1);
 }
-
+.active-project-navlink{
+    color: #90caf9;
+}
 .class-after, .class-before {
     position: relative;
     padding-bottom: 13px;
@@ -62,11 +60,15 @@ body {
     @apply font-medium text-lg mb-4 leading-7 ;
 }
 
-.main-heder{
+.main-header{
     @apply text-5xl font-semibold my-5 inline-block ;
 }
 .container{
     @apply  py-16 w-5/6 m-auto ;
     border-bottom: solid rgba(134, 193, 239, 0.5) 2px;
+}
+.project-navlink{
+    border: 1px solid #6885ae;
+    
 }
 

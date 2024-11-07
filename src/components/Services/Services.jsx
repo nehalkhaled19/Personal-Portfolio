@@ -3,7 +3,7 @@ import React from "react";
 export default function Services() {
   return (
     <section className="container text-center main-border">
-      <h2 className="main-heder m-auto class-before">
+      <h2 className="main-header m-auto class-before">
         <i className="fa-solid fa-laptop-code fa-xs icon-color"></i> Services
       </h2>
       <div className="mt-8 flex justify-between gap flex-wrap">
