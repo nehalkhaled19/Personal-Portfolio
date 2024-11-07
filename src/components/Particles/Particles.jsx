@@ -51,7 +51,7 @@ const ParticlesComponent = () => {
           speed: 2,
           straight: true,
         },
-        number: { density: { enable: true }, value: 100 },
+        number: { density: { enable: true }, value: 80 },
         opacity: { value: 0.4 },
         shape: { type: "circle" },
         size: { value: { min: 1, max: 3 } },
@@ -62,7 +62,7 @@ const ParticlesComponent = () => {
   );
 
   if (init) {
-    return <Particles className="z-10" id="tsparticles" options={options} />;
+    return <Particles className="z" id="tsparticles" options={options} />;
   }
 
   return null;
