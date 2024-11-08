@@ -84,7 +84,7 @@ export default function Projects() {
                   <div className="flex justify-center">
           <a target="_blank" href={element.repo}>
             <div className="mr-1 w-9 h-9 rounded-full flex items-center justify-center bg-icon text-white ">
-              <i class="fa-solid fa-link fa-sm"></i>
+              <i class="fa-solid fa-link "></i>
             </div>
           </a>
           <a target="_blank"  href={element.liveDemo}>
