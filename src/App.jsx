@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Skills from "./components/Skills/Skills";
 import Services from "./components/Services/Services";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Skills />
       <Services />
       <Projects/>
+      <Contact/>
       <ParticlesComponent />
     </div>
   );
