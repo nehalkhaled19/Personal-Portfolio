@@ -54,11 +54,6 @@ export default function Home() {
               <i class="fa-brands fa-github fa-xl"></i>
             </div>
           </a>
-
-          {/* <a target="_blank" href="mailto:nehalkhaled62@gmail.com">
-            <div className="w-12 h-12 shadow-button border rounded-full flex items-center justify-center ">
-            <i class="fa-brands fa-github fa-xl"></i></div>
-          </a> */}
         </div>
       </main>
     </section>

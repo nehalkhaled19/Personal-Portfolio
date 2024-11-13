@@ -3,7 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+::selection{
+    background-color: var(--ligh-blue);
+}
 :root{
     --dark-blue:#023262;
     --ligh-blue:#90caf9;
@@ -87,9 +89,9 @@ body {
     bottom: 100%;
     left: 1rem;
     right: 1rem;
-    opacity: 0.9;
-    background: #e5e7eb;
-    color:var(--dark-blue);
+    /* opacity: 0.9; */
+    background:  rgba(134, 193, 239,0.9);
+    color:white;
     font-style: italic;
     transition: all 0.3s;
 }
@@ -121,4 +123,24 @@ body {
 }
 .layer-container:hover .project-name {
     bottom: 0;
+}
+.form-class{
+    background-color: #e5e7eb33;
+    transition: all 0.5s;
+    @apply  w-full my-2 py-4 rounded-2xl shadow-button px-4;
+}
+.form-class::placeholder{
+color: white;
+}
+.form-class:focus{
+ background-color: #fff;
+ color: var(--dark-blue);
+}
+
+.form-class:focus::placeholder {
+    color: var(--dark-blue); /* لون placeholder عند التركيز */
+}
+
+.form-class:focus-visible{
+    outline: 0;
 }
