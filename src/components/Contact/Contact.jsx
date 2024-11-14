@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../assets/9.svg'
+import img from '../../assets/11.svg'
 import ContactForm from './ContactForm';
 export default function Contact() {
     return (

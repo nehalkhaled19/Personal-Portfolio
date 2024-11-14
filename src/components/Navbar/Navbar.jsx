@@ -13,13 +13,13 @@ export default function Navbar() {
     setDark(!dark);
   };
   return (
-    <nav className="fixed w-full  justify-between align-middle py-5  bg-neutral-800 bg-opacity-20">
+    <nav className="fixed w-full font-semibold justify-between align-middle py-5  bg-neutral-800 bg-opacity-20">
       
       <main className=" w-5/6 flex justify-between align-middle m-auto "><div>
-        <h3 className="font-semibold text-3xl">Nehal</h3>
+        <h3 className="text-3xl">Nehal Khaled</h3>
       </div>
 
-      <ul className="flex align-middle mt-2">
+      <ul className="flex align-middle mt-2  text-lg">
         <li className="mx-2 p-0 my-0">
           <a href="#home">Home</a>
         </li>
