@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 export default function Contact() {
     return (
         <div className="main-border pt-0">
-        <section id="about" className="container flex">
+        <section id="contact" className="container flex">
         <div className=" w-2/4 z-30 flex items-center ">
           <img src={img} alt="girl writes email" className="w-3/4 m-auto" />
           </div>

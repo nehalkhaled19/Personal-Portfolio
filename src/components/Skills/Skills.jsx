@@ -23,7 +23,7 @@ export default function Skills() {
   };
 
   return (
-    <section className="container text-center main-border ">
+    <section id="skills" className="container text-center main-border ">
       <h2 className="main-header m-auto class-before ">
         <i className="fa-solid fa-code fa-xs icon-color"></i> Skills
       </h2>

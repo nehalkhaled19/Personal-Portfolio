@@ -37,7 +37,7 @@ export default function Projects() {
   }
 
   return (
-    <section className="container text-center main-border">
+    <section id="projects" className="container text-center main-border">
       <h2 className="main-header m-auto">
         <i className="fa-solid fa-folder-open fa-xs icon-color "></i> Projects
       </h2>
