@@ -72,7 +72,7 @@ export default function Nav() {
         <a href={e.href}>{e.label}</a>
       </li>
        })}
-       
+       <li>Hi</li>
       </ul>
           </div>
         </div>
