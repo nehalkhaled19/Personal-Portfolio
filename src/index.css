@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ::selection{
-    background-color: var(--ligh-blue);
+    background-color: var(--light-blue);
 }
 :root{
     --dark-blue:#023262;
-    --ligh-blue:#90caf9;
+    --light-blue:#90caf9;
 }
 body {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
     color: white;
+ /* width: 100vw; */
     background: linear-gradient(90deg, rgb(9, 9, 11),var(--dark-blue));
+    background-repeat: no-repeat;
 }
 
 .slider-bg {
@@ -39,7 +42,7 @@ body {
 }
 
 .active-project-navlink {
-    color: var(--ligh-blue);
+    color: var(--light-blue);
 }
 
 .class-after,
@@ -55,12 +58,12 @@ body {
     bottom: 0;
     left: 0;
     right: 40%;
-    background-color: var(--ligh-blue);
+    background-color: var(--light-blue);
     height: 4px;
 }
 
 .icon-color {
-    color: var(--ligh-blue);
+    color: var(--light-blue);
 }
 
 .class-before::before {
@@ -90,17 +93,18 @@ body {
     left: 1rem;
     right: 1rem;
     /* opacity: 0.9; */
-    background:  rgba(134, 193, 239,0.9);
+    background:  #052f59ab;
     color:white;
     font-style: italic;
     transition: all 0.4s;
 }
 
 .bg-icon {
-    border:var(--dark-blue) solid 2px;
+    border:#024990 solid 2px;
     position: relative;
     top: 200%;
-    background-color:var(--dark-blue);
+    z-index: 50;
+    background-color:#024990;
     transition: all 0.3s;
     transition: top 0.8s;
 }
@@ -143,4 +147,27 @@ color: white;
 
 .form-class:focus-visible{
     outline: 0;
-}
+}@layer base {
+    html {
+      font-size: 16px; /* الحجم الأساسي */
+    }
+    @media (max-width: 980px) {
+        html {
+          font-size: 15px; /* الحجم في الشاشات الصغيرة */
+        }
+      }
+    
+  
+    @media (max-width: 640px) {
+      html {
+        font-size: 14px; /* الحجم في الشاشات الصغيرة */
+      }
+    }
+  
+    @media (max-width: 480px) {
+      html {
+        font-size: 12px; /* الحجم في الشاشات الأصغر */
+      }
+    }
+  }
+  

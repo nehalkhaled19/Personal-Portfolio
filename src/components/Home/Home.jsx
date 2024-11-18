@@ -12,8 +12,8 @@ export default function Home() {
       cursorChar: "|",
       autoInsertCss: true,
       backDelay: 500,
-      typeSpeed: 100,
-      backSpeed: 100, // سرعة محو الحروف
+      typeSpeed: 150,
+      backSpeed: 150,
       backDelay: 500,
       loopCount: Infinity,
     });
@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <section id="home" className="w-full h-lvh pt-7 flex flex-col justify-center text-center text-white">
-      <main className="w-2/4 m-auto">
+      <main className="px-5 lg:0 lg:w-2/4 m-auto">
         <h2 className="text-5xl font-semibold my-5"> Hi, I’m Nehal Khaled</h2>
         <span className="text-6xl new">
           F<h1 className="inline-flex" ref={el}></h1>

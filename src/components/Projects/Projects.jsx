@@ -77,7 +77,7 @@ export default function Projects() {
        
         <div className={`flex flex-wrap animate__animated ${animationClass}`}>
           {projectsArray.map((element, index) => (
-            <div className="w-1/3 z-30 p-4 relative layer-container" key={index}>
+            <div className="md:w-2/4 lg:w-1/3  p-4 relative layer-container" key={index}>
               <div className="project-layer rounded-lg overflow-hidden">
                 <div className="w-full h-full flex flex-col justify-center items-center">
                   <h2 className="text-2xl font-medium project-name">{element.name}</h2>
@@ -99,7 +99,7 @@ export default function Projects() {
               </div>
               <img
                 src={element.src}
-                className="w-full rounded-lg"
+                className="w-full  rounded-lg"
                 alt={element.name}
               />
             </div>
