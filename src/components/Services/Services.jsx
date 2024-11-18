@@ -35,8 +35,8 @@ export default function Services() {
       </h2>
       <div className="mt-8 flex justify-between gap flex-wrap">
         {services.map((service,index) => (
-          <div key={index} className="md:w-2/4 lg:w-1/3">
-            <div className="p-4 flex m-5 items-center gap-3 shadow-button rounded-2xl">
+          <div key={index} className="m-auto max-width w-5/6 sm:w-2/4 lg:w-1/3">
+            <div className="p-4 flex m-2 md:m-5 items-center gap-3 shadow-button rounded-2xl">
               <div className="w-14 h-14 rounded-full bg-cyan-500 flex items-center justify-center">
                 <i className={`fa-solid ${service.icon} fa-xl icon-coor`}></i>
               </div>

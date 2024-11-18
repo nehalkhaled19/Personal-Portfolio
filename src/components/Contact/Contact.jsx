@@ -9,7 +9,7 @@ export default function Contact() {
         
           <img src={img} alt="girl writes email" className="md:w-4/6 lg:w-3/4 m-auto" />
           </div>
-          <div className="lg:w-2/4 px-10">
+          <div className="lg:w-2/4 lg:px-10">
             <h2 className="main-header class-after">
               <span> <i class="icon-color fa-solid line-h fa-phone fa-xs"></i> Get </span>in Touch
             </h2>

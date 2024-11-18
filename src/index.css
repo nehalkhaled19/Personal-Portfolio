@@ -147,7 +147,8 @@ color: white;
 
 .form-class:focus-visible{
     outline: 0;
-}@layer base {
+}
+@layer base {
     html {
       font-size: 16px; /* الحجم الأساسي */
     }
@@ -155,18 +156,31 @@ color: white;
         html {
           font-size: 15px; /* الحجم في الشاشات الصغيرة */
         }
+        .container {
+            width: 100% !important;
+            padding: 0px;
+ 
+          }
       }
-    
+     
   
     @media (max-width: 640px) {
       html {
         font-size: 14px; /* الحجم في الشاشات الصغيرة */
       }
+      .container {
+        @apply py-16 w-full m-auto px-5;
+        border-bottom: solid rgba(134, 193, 239, 0.5) 2px;
+    }
+    
     }
   
     @media (max-width: 480px) {
       html {
         font-size: 12px; /* الحجم في الشاشات الأصغر */
+      }
+      .max-width{
+        width: 100% !important;
       }
     }
   }

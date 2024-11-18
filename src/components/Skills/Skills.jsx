@@ -26,11 +26,11 @@ export default function Skills() {
       <h2 className="main-header m-auto class-before ">
         <i className="fa-solid fa-code fa-xs icon-color"></i> Skills
       </h2>
-      <div className="mt-10 ">
+      <div className="mt-10 px-5">
         <Slider {...settings} className='w-full'>
           {skillsList.map((skill, index) => (
             <div key={index} className="slider">
-              <div className=' slider-bg mx-5 lg:mx-10 pt-4 pb-2 px-0 rounded-2xl'>
+              <div className=' slider-bg mx-2 sm:mx-5 lg:mx-10 pt-4 pb-2 px-0 rounded-2xl'>
               <img className="w-20 h-20 m-auto " src={skill.src} alt={skill.name} />
               <p className='mt-3'>{skill.name}</p>
               
