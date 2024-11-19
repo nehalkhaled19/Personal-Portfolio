@@ -4,7 +4,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+    scroll-behavior: smooth;
+  }
+
 ::selection{
+    background-color: var(--light-blue);
+}
+.active-link{
     background-color: var(--light-blue);
 }
 :root{

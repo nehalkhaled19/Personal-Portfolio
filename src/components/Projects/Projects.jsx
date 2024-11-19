@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import projectsList from "./projectList";
-import "animate.css";
 
 export default function Projects() {
   const [projectsArray, setProjectsArray] = useState([]);
