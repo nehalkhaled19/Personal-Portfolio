@@ -18,11 +18,22 @@ html {
     --dark-blue:#023262;
     --light-blue:#90caf9;
 }
+.nav-bg{
+    /* background: linear-gradient(90deg, #000000, #2f89c5); */
+    /* background: linear-gradient(90deg, #023262, #00bcd4); */
+    /* background: linear-gradient(90deg, #000000, #023262); */
+    /* background: linear-gradient(90deg, #023262, #90caf9);  */
+    /* background-color: #073e75; */
+    /* background-color: #024990; */
+    background-color: #133352;
+    
+}
+
+
 body {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
     color: white;
- /* width: 100vw; */
     background: linear-gradient(90deg, rgb(9, 9, 11),var(--dark-blue));
     background-repeat: no-repeat;
 }

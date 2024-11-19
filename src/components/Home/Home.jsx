@@ -40,7 +40,7 @@ export default function Home() {
         </p>
 <a target="_blank" href="https://drive.google.com/file/d/1ejsmGIh5bjj7uEadSh6_FPDDURJ9i3f9/view?usp=drive_link">
 <button className=" shadow-button rounded-xl p-3 mt-4 over">
-          Download my CV <i class="fa-solid fa-cloud-arrow-down mx-2 font-semibold fa-xl custom-bounce"></i>
+          Download my CV <i class="fa-solid fa-cloud-arrow-down mx-2 fa-lg custom-bounce"></i>
         </button></a>
        
         <div className="flex justify-center mt-5">
