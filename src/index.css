@@ -103,7 +103,9 @@ body {
 }
 
 /* Project Section */
-
+.z{
+    z-index: 100;
+}
 .project-layer {
     position: absolute;
     top: 1rem;
@@ -111,7 +113,7 @@ body {
     left: 1rem;
     right: 1rem;
     /* opacity: 0.9; */
-    background:  #052f59ab;
+    background:  #020f1cab;
     color:white;
     font-style: italic;
     transition: all 0.4s;
@@ -146,6 +148,13 @@ body {
 .layer-container:hover .project-name {
     bottom: 0;
 }
+
+#projects {
+    position: relative;
+    z-index: 10; /* أعلى من الخلفية */
+  }
+
+  
 .form-class{
     background-color: #e5e7eb33;
     transition: all 0.5s;

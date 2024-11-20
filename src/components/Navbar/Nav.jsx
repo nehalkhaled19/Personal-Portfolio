@@ -30,9 +30,7 @@ export default function Nav() {
       const scrollPosition = window.scrollY;
       getActiveSection(sections,scrollPosition)
     changeNavbarBg(scrollPosition)
-
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -62,7 +60,6 @@ function getActiveSection(sections,scrollPosition){
    sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-
         if (
           scrollPosition >= sectionTop - sectionHeight / 3 && 
           scrollPosition < sectionTop + sectionHeight - sectionHeight / 3

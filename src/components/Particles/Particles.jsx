@@ -62,7 +62,7 @@ const ParticlesComponent = () => {
   );
 
   if (init) {
-    return <Particles className="z" id="tsparticles" options={options} />;
+    return <Particles className="z-10" id="tsparticles" options={options} />;
   }
 
   return null;

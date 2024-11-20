@@ -36,7 +36,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="container text-center main-border">
+    <section id="projects" className="container text-center main-border animate-section" style={{ transition: 'opacity 0.5s ease' }} data-animation-in="animate__fadeIn" data-animation-out="animate__fadeOut">
       <h2 className="main-header m-auto">
         <i className="fa-solid fa-folder-open fa-xs icon-color "></i> Projects
       </h2>
@@ -72,7 +72,7 @@ export default function Projects() {
           </li>
         </ul>
       </nav>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden z-30 opacity-100">
        
         <div className={`flex flex-wrap animate__animated ${animationClass}`}>
           {projectsArray.map((element, index) => (
