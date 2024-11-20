@@ -29,7 +29,8 @@ export default function Services() {
   ]);
 
   return (
-    <section id="services" className="container text-center main-border animate-section" style={{ transition: 'opacity 0.5s ease' }}  data-animation-in="animate__fadeIn" data-animation-out="animate__fadeOut">
+    <section id="services" className=" overflow-hidden"   >
+         <main className=" opacity-0 container text-center main-border animate-section" style={{ transition: 'opacity 0.5s ease' }} >
       <h2 className="main-header m-auto class-before">
         <i className="fa-solid fa-laptop-code fa-xs icon-color"></i> Services
       </h2>
@@ -45,6 +46,6 @@ export default function Services() {
           </div>
         ))}
       </div>
-    </section>
+      </main> </section>
   );
 }

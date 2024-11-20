@@ -11,45 +11,22 @@ import "animate.css";
 
 export default function App() {
 
-
-
-// Function to handle animation for a specific element
-const handleAnimation = (element, animationIn, animationOut) => {
-  if (isElementInView(element)) {
-    element.classList.add("animate__animated", animationIn);
-    element.classList.remove(animationOut);
-  } else {
-    element.classList.add(animationOut);
-    element.classList.remove(animationIn);
-  }
+// Utility function to check if an element is in the viewport
+const isElementInView = (element) => {
+  const { top, bottom } = element?.getBoundingClientRect();
+  return top < window.innerHeight && bottom > 0;
 };
+
 
 // Function to animate specific sections (without using ref, using querySelectorAll)
-const animateSection = () => {
+const animateSections = () => {
   const sections = document.querySelectorAll(".animate-section");
   sections.forEach((section) => {
-    const animationIn = section.dataset.animationIn || 'animate__fadeIn';
-    const animationOut = section.dataset.animationOut || 'animate__fadeOut';
-    handleAnimation(section, animationIn, animationOut);
+    // Use the animation data from the section's attributes (data-animation-in and data-animation-out)
+    const animationIn = 'animate__fadeInDown'
+    handleAnimation(section, animationIn);
   });
 };
-
-// Scroll handler function to trigger animations
-const handleScroll = () => {
-  animateSection();
-};
-
-
-
-
-
-
-
-  // Utility function to check if an element is in the viewport
-  const isElementInView = (element) => {
-    const { top, bottom } = element.getBoundingClientRect();
-    return top < window.innerHeight && bottom > 0;
-  };
 
   // Function to handle animation for a specific element
   const handleAnimation = (element, animationIn, animationOut) => {
@@ -63,7 +40,7 @@ const handleScroll = () => {
   };
 
   // Function to animate specific sections
-  const animateSections = () => {
+  const animateElements = () => {
     const sections = document.querySelectorAll(".animate-element");
     sections.forEach((section) => {
       const animationIn = section.dataset.animationIn;
@@ -73,7 +50,12 @@ const handleScroll = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => animateSections();
+    function handleScroll(){
+      animateElements()
+  animateSections();
+
+    }
+
     window.addEventListener("scroll", handleScroll);
 
     // Cleanup on unmount

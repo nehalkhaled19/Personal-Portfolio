@@ -15,7 +15,7 @@ export default function Skills() {
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
-      { breakpoint: 1200, settings: { slidesToShow: 6 } },
+      { breakpoint: 1200, settings: { slidesToShow: 5 } },
       { breakpoint: 990, settings: { slidesToShow: 4 } },
       { breakpoint: 767, settings: { slidesToShow: 3 } },
       { breakpoint: 480, settings: { slidesToShow: 2 } },
@@ -24,7 +24,11 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="container text-center main-border animate-section" style={{ transition: 'opacity 0.5s ease' }} data-animation-in="animate__fadeIn" data-animation-out="animate__fadeOut">
+    <section
+      id="skills"
+      className="overflow-hidden "
+    >
+         <main className=" opacity-0 animate-section container text-center main-border" >
       <h2 className="main-header m-auto class-before ">
         <i className="fa-solid fa-code fa-xs icon-color"></i> Skills
       </h2>
@@ -39,7 +43,7 @@ export default function Skills() {
             </div>
           ))}
         </Slider>
-      </div>
+      </div> </main>
     </section>
   );
 }

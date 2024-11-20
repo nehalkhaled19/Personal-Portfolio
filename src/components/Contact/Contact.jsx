@@ -6,14 +6,14 @@ export default function Contact() {
     return (
         <div className="main-border pt-0">
         <section id="contact" className="container lg:flex">
-        <div className=" lg:w-2/4 z-30 flex items-center animate-element"  data-animation-in="animate__fadeInTopLeft"
-          data-animation-out="animate__fadeOutTopLeft"
+        <div className=" lg:w-2/4 z-30 flex items-center animate-element"      data-animation-in="animate__slideInLeft"
+          data-animation-out="animate__slideOutLeft"
         >
         
           <img src={img} alt="girl writes email" className="md:w-4/6 lg:w-3/4 m-auto" />
           </div>
-          <div className="lg:w-2/4 lg:px-10 animate-element "  data-animation-in="animate__fadeInTopRight"
-          data-animation-out="animate__fadeOutTopRight"
+          <div className="lg:w-2/4 lg:px-10 animate-element "      data-animation-in="animate__slideInRight"
+          data-animation-out="animate__slideOutRight"
         >
             <h2 className="main-header class-after">
               <span> <i class="icon-color fa-solid line-h fa-phone fa-xs"></i> Get </span>in Touch

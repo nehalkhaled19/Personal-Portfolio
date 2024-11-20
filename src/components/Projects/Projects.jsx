@@ -36,7 +36,8 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="container text-center main-border animate-section" style={{ transition: 'opacity 0.5s ease' }} data-animation-in="animate__fadeIn" data-animation-out="animate__fadeOut">
+    <section id="projects" className="overflow-hidden" >
+     <main className="container text-center main-border opacity-0 animate-section" style={{ transition: 'opacity 0.2s ease' }} >
       <h2 className="main-header m-auto">
         <i className="fa-solid fa-folder-open fa-xs icon-color "></i> Projects
       </h2>
@@ -104,7 +105,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
-      </div>
+      </div></main>
     </section>
   );
 }
