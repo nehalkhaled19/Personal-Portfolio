@@ -1,0 +1,31 @@
+:root {
+    --dark-blue: #023262;
+    --light-blue: #90caf9;
+    --highlight-color: var(--light-blue);
+    --border-color: rgba(134, 193, 239, 0.5);
+    --button-shadow: rgba(141, 201, 248, 0.3);
+    --button-border: rgba(134, 193, 239, 1);
+    --slider-bg: #e5e7eb33;
+    --project-layer-bg: #020f1cab;
+    --project-layer-color: white;
+    --icon-border: #024990;
+    --icon-bg: #024990;
+    --icon-hover-color: #023262;
+    --icon-hover-bg: #fff;
+    --form-bg: #e5e7eb33;
+    --form-placeholder: white;
+    --form-focus-bg: #fff;
+    --form-focus-color: var(--dark-blue);
+    --form-focus-placeholder: var(--dark-blue);
+    --nav-bg-color: #133352;
+    --background-gradient: linear-gradient(90deg, rgb(9, 9, 11), var(--dark-blue));
+    --particle-color: #ffffff;
+    --particle-link-color: #90caf9;
+  }
+  
+  body {
+    color: white;
+    background: var(--background-gradient);
+    background-repeat: no-repeat;
+  }
+  

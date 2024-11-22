@@ -1,214 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+/* ==================== Global Styles ==================== */
 
+/* الفونت العام */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* استايلات Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
-    scroll-behavior: smooth;
-  }
-
-::selection{
-    background-color: var(--light-blue);
-}
-.active-link{
-    background-color: var(--light-blue);
-}
-:root{
-    --dark-blue:#023262;
-    --light-blue:#90caf9;
-}
-.nav-bg{
-    /* background: linear-gradient(90deg, #000000, #2f89c5); */
-    /* background: linear-gradient(90deg, #023262, #00bcd4); */
-    /* background: linear-gradient(90deg, #000000, #023262); */
-    /* background: linear-gradient(90deg, #023262, #90caf9);  */
-    /* background-color: #073e75; */
-    /* background-color: #024990; */
-    background-color: #133352;
-    
+  scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: var(--highlight-color);
+}
+
+/* ==================== Root Variables ==================== */
+
+/* القيم الافتراضية */
+:root {
+  --highlight-color: #90caf9;
+  --border-color: rgba(134, 193, 239, 0.5);
+  --button-shadow: rgba(141, 201, 248, 0.3);
+  --button-border: rgba(134, 193, 239, 1);
+  --particle-link-color: #90caf9;
+}
+
+/* ==================== Dark Mode Variables ==================== */
+.dark-mode {
+  --background-color: #333;
+  --text-color: #fff;
+  --button-color: #555;
+  --button-text-color: #ddd;
+  --background-gradient: linear-gradient(90deg, rgb(9, 9, 11), #023262);
+  --nav-bg-color: #133352;
+  --static-nav-bg: #1e293b;
+  --active-link-bg: #90caf9;
+  --active-link-text: #ffffff;
+  --form-bg: #e5e7eb33;
+  --form-placeholder: white;
+  --form-focus-bg: #fff;
+  --form-focus-color: #023262;
+  --form-focus-placeholder: #023262;
+  --icon-border: #024990;
+  --icon-bg: #024990;
+  --icon-hover-color: #023262;
+  --icon-hover-bg: #fff;
+}
+
+/* ==================== Light Mode Variables ==================== */
+.light-mode {
+  --background-color: #fff;
+  --text-color: #333;
+  --button-color: #4CAF50;
+  --button-text-color: #fff;
+  --background-gradient: linear-gradient(90deg, #e3f2fd, #90caf9);
+  --nav-bg-color: #ffffff;
+  --static-nav-bg: #edeeee71;
+  --active-link-bg: #90caf9;
+  --active-link-text: #ffffff;
+  --form-bg: #f3f4f6;
+  --form-placeholder: #666;
+  --form-focus-bg: #fff;
+  --form-focus-color: #023262;
+  --form-focus-placeholder: #023262;
+  --icon-border: #024990;
+  --icon-bg: #90caf9;
+  --icon-hover-color: #fff;
+  --icon-hover-bg: #023262;
+}
+
+/* ==================== Global Styles ==================== */
 
 body {
-    font-family: "Inter", sans-serif;
-    box-sizing: border-box;
-    color: white;
-    background: linear-gradient(90deg, rgb(9, 9, 11),var(--dark-blue));
-    background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  color: var(--text-color);
+  background: var(--background-gradient);
+  background-repeat: no-repeat;
+  transition: background 0.3s, color 0.3s;
 }
 
-.slider-bg {
-    background: #e5e7eb33;
-    transition: all 0.3s;
+/* ==================== Navbar Styles ==================== */
+
+.nav-bg {
+  background-color: var(--nav-bg-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.slider:hover .slider-bg {
-    transform: rotateY(360deg) scale(0.8, 0.8)
+.nav-link {
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--highlight-color);
+}
+.static-Navbar{
+  background-color: rgba(86, 86, 87, 0.053)
+}
+
+.active-link {
+  background-color: var(--active-link-bg);
+  color: var(--active-link-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ==================== Buttons and Interactions ==================== */
+
+.shadow-button:hover,
+.active-project-navlink {
+  box-shadow: 0px 1px 20px var(--button-shadow);
+  border: 1px solid var(--button-border);
+}
+
+.active-project-navlink {
+  color: var(--highlight-color);
 }
 
 .shadow-button,
 .project-navlink {
-    transition: all 0.3s;
-    border: 1px solid #6885ae;
+  transition: all 0.3s;
+  border: 1px solid var(--border-color);
+}
+/* ==================== Skills Section ==================== */
+
+.slider-bg {
+  background-color: var(--form-bg) !important;
+  transition: all 0.3s;
 }
 
-.shadow-button:hover,
-.active-project-navlink {
-    box-shadow: 0px 1px 20px rgba(141, 201, 248, 0.3);
-    border: 1px solid rgba(134, 193, 239, 1);
+.slider:hover .slider-bg {
+  transform: rotateY(360deg) scale(0.8, 0.8)
 }
+/* ==================== Project Section ==================== */
 
-.active-project-navlink {
-    color: var(--light-blue);
-}
-
-.class-after,
-.class-before {
-    position: relative;
-    padding-bottom: 13px;
-}
-
-.class-before::before,
-.class-after::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 40%;
-    background-color: var(--light-blue);
-    height: 4px;
-}
-
-.icon-color {
-    color: var(--light-blue);
-}
-
-.class-before::before {
-    left: 10%;
-    right: 8%;
-}
-
-.main-text {
-    @apply font-medium text-lg mb-4 leading-7;
-}
-
-.main-header {
-    @apply text-5xl font-semibold my-5 inline-block;
-}
-
-.container {
-    @apply py-16 w-5/6 m-auto;
-    border-bottom: solid rgba(134, 193, 239, 0.5) 2px;
-}
-
-/* Project Section */
-.z{
-    z-index: 100;
+#projects {
+  position: relative;
+  z-index: 10; 
 }
 .project-layer {
-    position: absolute;
-    top: 1rem;
-    bottom: 100%;
-    left: 1rem;
-    right: 1rem;
-    /* opacity: 0.9; */
-    background:  #020f1cab;
-    color:white;
-    font-style: italic;
-    transition: all 0.4s;
+  position: absolute;
+  top: 1rem;
+  bottom: 100%;
+  left: 1rem;
+  right: 1rem;
+  /* opacity: 0.9; */
+  background:  #020f1cab;
+  color:white;
+  font-style: italic;
+  transition: all 0.4s;
 }
 
 .bg-icon {
-    border:#024990 solid 2px;
-    position: relative;
-    top: 200%;
-    z-index: 50;
-    background-color:#024990;
-    transition: all 0.3s;
-    transition: top 0.8s;
+  border:#024990 solid 2px;
+  position: relative;
+  top: 200%;
+  z-index: 50;
+  background-color:#024990;
+  transition: all 0.3s;
+  transition: top 0.8s;
 }
 .project-name{
-    position: relative;
-    bottom: 50%;
-    transition: all 0.8s;
+  position: relative;
+  bottom: 50%;
+  transition: all 0.8s;
 }
 
 .bg-icon:hover {
-    color:var(--dark-blue);
-    background-color: #fff;
+  color:var(--dark-blue);
+  background-color: #fff;
 }
 
 .layer-container:hover .project-layer {
-    bottom: 1rem;
+  bottom: 1rem;
 }
 .layer-container:hover .bg-icon{
-    top: 0;
+  top: 0;
 }
 .layer-container:hover .project-name {
-    bottom: 0;
+  bottom: 0;
 }
 
-#projects {
-    position: relative;
-    z-index: 10; /* أعلى من الخلفية */
-  }
 
-  
-.form-class{
-    background-color: #e5e7eb33;
-    transition: all 0.5s;
-    @apply  w-full my-2 py-4 rounded-2xl shadow-button px-4;
+/* ==================== Contact Section ==================== */
+
+.form-class {
+  background-color: var(--form-bg);
+  color: var(--form-placeholder);
+  transition: all 0.5s;
 }
-.form-class::placeholder{
-color: white;
+
+.form-class::placeholder {
+  color: var(--form-placeholder);
 }
-.form-class:focus{
- background-color: #fff;
- color: var(--dark-blue);
+
+.form-class:focus {
+  background-color: var(--form-focus-bg);
+  color: var(--form-focus-color);
 }
 
 .form-class:focus::placeholder {
-    color: var(--dark-blue); /* لون placeholder عند التركيز */
+  color: var(--form-focus-placeholder);
 }
 
-.form-class:focus-visible{
-    outline: 0;
+.form-class:focus-visible {
+  outline: 0;
 }
-@layer base {
-    html {
-      font-size: 16px; /* الحجم الأساسي */
-    }
-    @media (max-width: 980px) {
-        html {
-          font-size: 15px; /* الحجم في الشاشات الصغيرة */
-        }
-        .container {
-            width: 100% !important;
-            padding: 0px;
- 
-          }
-      }
-     
-  
-    @media (max-width: 640px) {
-      html {
-        font-size: 14px; /* الحجم في الشاشات الصغيرة */
-      }
-      .container {
-        @apply py-16 w-full m-auto px-5;
-        border-bottom: solid rgba(134, 193, 239, 0.5) 2px;
-    }
-    
-    }
-  
-    @media (max-width: 480px) {
-      html {
-        font-size: 12px; /* الحجم في الشاشات الأصغر */
-      }
-      .max-width{
-        width: 100% !important;
-      }
-    }
-  }
-  

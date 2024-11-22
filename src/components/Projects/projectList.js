@@ -1,18 +1,18 @@
 // skillsList.js
-import Daniels from '../../assets/projects/1.png';
-import Capella from '../../assets/projects/2.png';
-import Bookmark from '../../assets/projects/3.png';
-import Login from '../../assets/projects/4.png';
-import Ubone from '../../assets/projects/5.png';
-import Games from '../../assets/projects/6.png';
-import Yummy from '../../assets/projects/7.png';
-import Architecture from '../../assets/projects/8.png';
-import Skiy from '../../assets/projects/10.png';
-import LiveChat from '../../assets/projects/9.png';
-import ResumeBuilder from '../../assets/projects/11.png';
-import CodeVista from '../../assets/projects/12.png';
-import Shopify from '../../assets/projects/13.png';
-import Manage360 from '../../assets/projects/14.png';
+import Daniels from '../../assets/Images/projects/1.png';
+import Capella from '../../assets/Images/projects/2.png';
+import Bookmark from '../../assets/Images/projects/3.png';
+import Login from '../../assets/Images/projects/4.png';
+import Ubone from '../../assets/Images/projects/5.png';
+import Games from '../../assets/Images/projects/6.png';
+import Yummy from '../../assets/Images/projects/7.png';
+import Architecture from '../../assets/Images/projects/8.png';
+import Skiy from '../../assets/Images/projects/10.png';
+import LiveChat from '../../assets/Images/projects/9.png';
+import ResumeBuilder from '../../assets/Images/projects/11.png';
+import CodeVista from '../../assets/Images/projects/12.png';
+import Shopify from '../../assets/Images/projects/13.png';
+import Manage360 from '../../assets/Images/projects/14.png';
 
 const projectsList = [
     { name: "Daniels", src: Daniels, liveDemo: 'https://nehalkhaled19.github.io/Daniels/', repo: 'https://github.com/nehalkhaled19/Daniels.git', lan:'html&css' },

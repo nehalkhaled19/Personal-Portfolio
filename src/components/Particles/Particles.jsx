@@ -3,9 +3,14 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-const ParticlesComponent = () => {
+const ParticlesComponent = ({theme}) => {
   const [init, setInit] = useState(false);
+  const color = theme == 'dark' ? '#ffffff' : '#023262'
 
+useEffect(()=>{
+  const color = theme == 'dark' ? '#ffffff' : '#023262'
+console.log(color);
+},[theme])
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
@@ -35,9 +40,9 @@ const ParticlesComponent = () => {
         },
       },
       particles: {
-        color: { value: "#ffffff" },
+        color: { value: color },
         links: {
-          color: "#ffffff",
+          color: color,
           distance: 40,
           enable: true, // تأكد من تفعيل الشبكة
           opacity: 1,

@@ -37,7 +37,10 @@ export default function Projects() {
 
   return (
     <section id="projects" className="overflow-hidden" >
-     <main className="container text-center main-border opacity-0 animate-section" style={{ transition: 'opacity 0.2s ease' }} >
+     <main className="container text-center main-border opacity-0 animate-section"  style={{ transition: 'opacity 0.2s ease' }} 
+          data-animation-out="animate__fadeOutDown"
+          data-animation-in="animate__fadeInDown" 
+     >
       <h2 className="main-header m-auto">
         <i className="fa-solid fa-folder-open fa-xs icon-color "></i> Projects
       </h2>

@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import './Home.css'
+
 export default function Home() {
+
+  
   const el = React.useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
@@ -25,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <section id="home" className="pt-20 w-full h-lvh  flex flex-col justify-center text-center text-white">
+    <section id="home" className="pt-20 w-full h-lvh  flex flex-col justify-center text-center">
       <main className="px-5 lg:0 lg:w-2/4 m-auto">
         <h2 className="text-4xl sm:text-5xl font-semibold my-5"> Hi, I’m Nehal Khaled</h2>
         <span className="text-4xl sm:text-6xl new">

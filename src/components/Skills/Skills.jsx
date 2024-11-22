@@ -5,8 +5,6 @@ import Slider from 'react-slick';
 import skillsList from './skillsList';
 
 export default function Skills() {
-
-
   const settings = {
     autoplay: true,
     autoplaySpeed: 2000,
@@ -26,9 +24,11 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="overflow-hidden "
-    >
-         <main className=" opacity-0 animate-section container text-center main-border" >
+      className="overflow-hidden">
+     <main className=" opacity-0 animate-section container text-center main-border" style={{ transition: 'opacity 0.5s ease' }}
+          data-animation-out="animate__fadeOutDown"
+      data-animation-in="animate__fadeInDown" 
+     >
       <h2 className="main-header m-auto class-before ">
         <i className="fa-solid fa-code fa-xs icon-color"></i> Skills
       </h2>
@@ -36,7 +36,7 @@ export default function Skills() {
         <Slider {...settings} className="w-full">
           {skillsList.map((skill, index) => (
             <div key={index} className="slider">
-              <div className="slider-bg mx-2 sm:mx-5 lg:mx-10 pt-4 pb-2 px-0 rounded-2xl">
+              <div className="slider-bg  bg-green-600 mx-2 sm:mx-5 lg:mx-10 pt-4 pb-2 px-0 rounded-2xl">
                 <img className="w-20 h-20 m-auto" src={skill.src} alt={skill.name} />
                 <p className="mt-3">{skill.name}</p>
               </div>

@@ -30,7 +30,10 @@ export default function Services() {
 
   return (
     <section id="services" className=" overflow-hidden"   >
-         <main className=" opacity-0 container text-center main-border animate-section" style={{ transition: 'opacity 0.5s ease' }} >
+         <main className=" opacity-0 container text-center main-border animate-section" style={{ transition: 'opacity 0.5s ease' }} 
+          data-animation-out="animate__fadeOut"
+          data-animation-in="animate__fadeIn" 
+         >
       <h2 className="main-header m-auto class-before">
         <i className="fa-solid fa-laptop-code fa-xs icon-color"></i> Services
       </h2>
@@ -39,7 +42,7 @@ export default function Services() {
           <div key={index} className="m-auto max-width w-5/6 sm:w-2/4 lg:w-1/3">
             <div className="p-4 flex m-2 md:m-5 items-center gap-3 shadow-button transition-transform duration-300 hover:scale-[1.03] rounded-2xl">
               <div className="w-14 h-14 rounded-full bg-cyan-500 flex items-center justify-center">
-                <i className={`fa-solid ${service.icon} fa-xl icon-coor`}></i>
+                <i className={`fa-solid ${service.icon} fa-xl icon-coor text-white `}></i>
               </div>
               <p className="text-xl font-semibold">{service.title}</p>
             </div>

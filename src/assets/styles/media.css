@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: var(--highlight-color);
+}
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+.main-text {
+  @apply font-medium text-lg mb-4 leading-7;
+}
+.main-header {
+  @apply text-5xl font-semibold my-5 inline-block;
+}
+.container {
+  @apply py-16 w-5/6 m-auto;
+  border-bottom: solid var(--border-color) 2px;
+}
+.shadow-button:hover,
+.active-project-navlink {
+  box-shadow: 0px 1px 20px var(--button-shadow);
+  border: 1px solid var(--button-border);
+}
+.active-project-navlink {
+  color: var(--highlight-color);
+}
+.class-after,
+.class-before {
+  position: relative;
+  padding-bottom: 13px;
+}
+.class-before::before,
+.class-after::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 40%;
+  background-color: var(--highlight-color);
+  height: 4px;
+}
+.class-before::before {
+  left: 10%;
+  right: 8%;
+}
+.icon-color {
+  color: var(--highlight-color);
+}
+.nav-bg {
+  background-color: var(--nav-bg-color);
+}
+.shadow-button,
+.project-navlink {
+  transition: all 0.3s;
+  border: 1px solid var(--button-border);
+}
+.slider-bg {
+  background: var(--slider-bg);
+  transition: all 0.3s;
+}
+.slider:hover .slider-bg {
+  transform: rotateY(360deg) scale(0.8, 0.8);
+}
+.project-layer {
+  position: absolute;
+  top: 1rem;
+  bottom: 100%;
+  left: 1rem;
+  right: 1rem;
+  background: var(--project-layer-bg);
+  color: var(--project-layer-color);
+  font-style: italic;
+  transition: all 0.4s;
+}
+.bg-icon {
+  border: var(--icon-border) solid 2px;
+  position: relative;
+  top: 200%;
+  z-index: 50;
+  background-color: var(--icon-bg);
+  transition: all 0.3s, top 0.8s;
+}
+.project-name {
+  position: relative;
+  bottom: 50%;
+  transition: all 0.8s;
+}
+.bg-icon:hover {
+  color: var(--icon-hover-color);
+  background-color: var(--icon-hover-bg);
+}
+.layer-container:hover .project-layer {
+  bottom: 1rem;
+}
+.layer-container:hover .bg-icon {
+  top: 0;
+}
+.layer-container:hover .project-name {
+  bottom: 0;
+}
+.form-class {
+  background-color: var(--form-bg);
+  transition: all 0.5s;
+  @apply w-full my-2 py-4 rounded-2xl shadow-button px-4;
+}
+.form-class::placeholder {
+  color: var(--form-placeholder);
+}
+.form-class:focus {
+  background-color: var(--form-focus-bg);
+  color: var(--form-focus-color);
+}
+.form-class:focus::placeholder {
+  color: var(--form-focus-placeholder);
+}
+.form-class:focus-visible {
+  outline: 0;
+}
